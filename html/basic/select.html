@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>select.html</title>
+    </head>
+    <body>
+        <section>
+            <h1>select 서식</h1>
+            <form action="subpages/result.html" method="get">
+                <select name="area">
+                    <!-- 실질적인 값은 value에다가 넣어줘야 한다. -->
+                    <option value="jongro-gu">종로구</option>
+                    <option value="joong-gu">중구</option>
+                    <option value="dongdaemun-gu">동대문구</option>
+                    <option value="gamnam-gu">강남구</option>
+                </select>
+                <br/>
+                <select id="city" name="city">
+                    <optgroup label="서울특별시">
+                        <option value="jongro-gu">종로구</option>
+                        <option value="joong-gu">중구</option>
+                        <option value="dongdaemun-gu">동대문구</option>
+                        <option value="gamnam-gu">강남구</option>
+                    </optgroup>
+                    
+                    <optgroup label="경기도">
+                        <option value="seongnam-si">성남시</option>
+                        <option value="gwacheon-si">과천시</option>
+                        <option value="yonin-si">용인시</option>
+                        <option value="hanam-si">하남시</option>
+                    </optgroup>
+                </select>
+
+
+
+                <hr/>
+                <button type="reset">다시선택</button>
+                <button type="submit">선택완료</button>
+            </form>
+        </section>
+    </body>
+</html>
