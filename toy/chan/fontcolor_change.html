@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontcolor_change.html</title>
+    <style type="text/css">
+        font{font-size: 2em;}
+    </style>
+    
+    <script>
+        var array=["red", "yellow", "green"];
+        var cnt=0;
+        window.onload=function(){
+            ff();
+        }
+
+        function ff(){
+            if(cnt==3) cnt=0;
+            f.style.color=array[cnt++];
+            setTimeout("ff()", 500);
+        }
+    </script>
+</head>
+<body>
+    <font id="f">글자</font>
+</body>
+</html>
