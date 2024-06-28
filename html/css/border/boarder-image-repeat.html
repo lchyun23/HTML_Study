@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>border-image-repeat.html</title>
+        <style>
+            div {
+                padding: 5px 10px 10px 10px;
+                width: 100px;
+                height: 20px;
+                font-weight: bold;
+                text-align: center;
+                border: #F00 solid 10px;
+                border-image-source: url("images/mouse.PNG");
+            }
+            .stretch {
+                border-image-repeat: stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>border-image-repeat 속성: 요소 박스에 지정한 이미지를 반복하는 스타일 설정</h1>
+        <p>원본 이미지 : <img src="images/mouse.PNG"/></p>
+        <div class="stretch">stretch</div>
+        <div class="repeat">repeat</div>
+        <div class="stretch_repeat">stretch_repeat</div>
+        <div class="repeat_stretch">repeat_stretch</div>
+        <div class="round">round</div>
+        <div class="space">space</div>
+    </body>
+</html>
