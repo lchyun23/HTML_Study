@@ -6,22 +6,28 @@
         <title>border-image-repeat.html</title>
         <style>
             div {
-                padding: 5px 10px 10px 10px;
-                width: 100px;
-                height: 20px;
+                padding: 20px 20px 20px 20px;
+                width: 800px;
+                height: 200px;
                 font-weight: bold;
                 text-align: center;
                 border: #F00 solid 10px;
-                border-image-source: url("images/mouse.PNG");
+                border-image-source: url("images/apple.PNG");
+                border-image-slice: 70; /* 70 20; 세로 가로 */
+                /* 30 15 20; 위 가로방향 아래 */
+                /* 30 15 20 7 위 오른쪽 아래 왼쪽 */
             }
-            .stretch {
-                border-image-repeat: stretch;
-            }
+            .stretch        {border-image-repeat: stretch;  }
+            .repeat         {border-image-repeat: repeat;   }
+            .stretch_repeat {border-image-repeat: stretch repeat;}
+            .repeat_stretch {border-image-repeat: repeat stretch;}
+            .round          {border-image-repeat: round;    }
+            .space          {border-image-repeat: space;    }
         </style>
     </head>
     <body>
         <h1>border-image-repeat 속성: 요소 박스에 지정한 이미지를 반복하는 스타일 설정</h1>
-        <p>원본 이미지 : <img src="images/mouse.PNG"/></p>
+        <p>원본 이미지 : <img src="images/apple.PNG"/></p>
         <div class="stretch">stretch</div>
         <div class="repeat">repeat</div>
         <div class="stretch_repeat">stretch_repeat</div>
