@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>everything.html</title>
+        <style>
+            .tit1 {
+                color: rgb(234, 116, 70);
+            }
+            .tit2 {
+                color: rgb(234, 116, 70); 
+            }
+            .tit3{
+                color: rgb(234, 116, 70);
+            }
+            .tit3_dfn {
+                color: rgb(234, 116, 70);
+            }
+            .tit4 {
+                color: rgb(234, 116, 70);
+            }
+            .tit5 {
+                color: rgb(234, 116, 70);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3 class=tit1>&lt;abbr&gt;</h3>
+        <p class="tit1_con1"><abbr title="별 걸 다 줄이네">별다줄</abbr>
+        별 걸 다 줄여서 생긴 말. 하지만 그러는 너도...</p>
+        <p class="tit2_con2">&lt;abbr&gt; 태그는 
+            <q>GNB&lpar;Global Navigation Bar&rpar;</q>
+            <q>LNB&lpar;Local Navigation Bar&rpar;</q>
+            <q>HTML&lpar;Hyper Text Markup Language&rpar;</q>과 같이 단어의 축약형이나 머리글자로 만들어진 단어를 정의할 때 사용합니다. title 속성을 사용해 단어의 정의를 작성합니다.
+        </p>
+        <hr/>
+
+        <h3 class="tit2">&lt;cite&gt;</h3>
+        <img src="./imgs/wait.jpeg" alt="기둘기" width="200" height="200"/>
+        <p class="tit_con1">
+            <cite>기둘기</cite>,
+            2024년 6월 30일
+            <br/>
+            &lt;cite&gt; 태그는 책이나 음악, 예술 작품 등과 같은 창작물의 제목을 정의할 때 사용합니다.
+        </p>
+        <hr/>
+
+        <h3 class="tit3">&lt;dfn&gt;</h3>
+        <p class="tit3_con1"><dfn class="tit3_dfn"><시맨틱 마크업></dfn>은 의미 있는 마크업이라는 뜻으로, &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;처럼 HTML을 의미있는 태그로 구성하는 것을 말한다.
+        </p>
+        <p class="tit3_con2">
+            <dfn>태그는 용어의 정의를 나타낼 때 사용합니다. 이때 부모 요소에는 해당 용어에 대한 정의나 설명이 반드시 포함되어야만 합니다.
+        </p>
+        <hr/>
+
+        <h3 class="tit4">&lt;kbd&gt;</h3>
+        <p class="tit4_con1">
+            <kbd>ALT</kbd>키와 <kbd>F4</kbd>키를 동시에 누르면
+            포커스를 가지고 있는 윈도우를 곧바로 닫을 수 있습니다.
+        </p>
+        <p class="tit4_con2">
+            &lt;kbd&gt; 태그는 키보드 입력을 나타낼 때 사용합니다. 기본값은 브라우저의 고정폭 글꼴로 출력되는 것이지만, CSS를 통해 다양한 효과를 줄 수 있습니다.
+        </p>
+        <hr/>
+
+        <h3 class="tit4">&lt;meter&gt;</h3>
+        <p class="tit4_con1">보컬
+            <meter min="0" max="10" value="8" low="4" high="6">8</meter>
+        </p>
+        <p class="tit4_con2">댄스
+            <meter min="0" max="10" value="5" low="4" high="6">5</meter>
+        </p>
+        
+        <p class="tit4_con3">랩
+            <meter min="0" max="10" value="3" low="4" high="6">3</meter>
+        </p>
+        <p class="tit4_con4">
+            &lt;meter&gt;태그는 분수 값이나 게이지 내에서 특정 값이 어느 정도인지 시각적으로 보여주고 싶을 때 사용합니다. 위 속성 외에도 low, high 등의 속성으로 범위를 지정해주면 변화하는 색상도 확인할 수 있습니다.
+        </p>
+        <hr/>
+        
+        <h3 class="tit5">&lt;q&gt;</h3>
+        <p class="tit5_con1">
+            <q>여기는 너희 집이 아니다. 이 세상에는 네가 찾는 게 하나도 없다.</q>이 문장이 &lt;기적 수업&gt;에 나오는데 요즘 제 모토에요. 성공이든 사랑이든 무의미함을 느낄 때, 그 문장이 있으면 힘듦이 정리돼요.
+        </p>
+        <p class="tit5_con2">
+            &lt;q&gt;태그는 짧은 인용구를 정의할 때 사용합니다. 브라우저에서는 앞뒤에 큰따옴표&lpar;""&rpar;를 붙여 출력합니다. &lt;blockquote&gt; 태그는 블록 단위의 인용구에 사용한다면, &lt;q&gt; 태그는 짧거나 문단 안에 포함될 수 있는 작은 단위의 인용구에 사용할 수 있습니다.
+        </p>
+        <hr/>
+
+        <h3 class="tit6">&lt;ruby&gt;</h3>
+        <p class="tit6_con1">
+            업무의 모든 것,
+            <ruby>티그리스<rt>쉬운 업무 플랫폼></rt>로 쉽고 </ruby>
+        </p>
+    </body>
+</html>
