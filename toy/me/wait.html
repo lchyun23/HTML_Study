@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wait.html</title>
+    <style>
+                /* 움직이는 텍스트 */
+        .animated-title {
+            font-size:30px; 
+            font-family:'Raleway',Sans-serif; font-weight:300; 
+            position: relative; 
+            width: 100%;
+            max-width:100%; 
+            height: auto; 
+            padding:100px 0; 
+            overflow-x: hidden; 
+            overflow-y: hidden; 
+        }
+
+        .animated-title .track {
+            position: absolute; 
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 60s linear infinite; 
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        @media (hover: hover) and (min-width: 700px)
+        {
+            .animated-title .content {
+                -webkit-transform: translateY(calc(100% - 8rem)); 
+                transform: translateY(calc(100% - 8rem));
+            }
+        }
+
+        /* Zoom In  */
+        .hover01 figure img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover01 figure:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        /* .content {
+            height: 50px;
+            background-color:bisque
+        } */
+    </style>
+</head>
+
+<body>
+    <h2 class="title">강건이 좋아!</h2>
+    <hr/>
+    <div class="animated-title">
+        <section class="track">
+            <p class="content">&nbsp;강건이를 기다리며 만들어보는 웹사이트&nbsp;그런데 어떻게 만들겠다 이런 생각은 없어서 어떻게 될지 나도 모르는 사이트&nbsp;강건이를 기다리며 만들어보는 웹사이트&nbsp;그런데 어떻게 만들겠다 이런 생각은 없어서 어떻게 될지 나도 모르는 사이트&nbsp;</p>
+        </section>
+        <hr/>
+        <br/>
+
+    <h6 id="demo01">그림에 마우스를 올려보세요.</h6>
+    <div class="hover01">
+        <div>
+            <figure><img src="imgs/wait.jpeg"/></figure>
+            <!-- <span>Hover</span> -->
+        </div>
+    </div>
+    </div>
+</body>
+</html>
